@@ -1,0 +1,120 @@
+.wrapper {
+  max-width: 736px;
+  margin: 0 auto 40px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  width: 100%;
+  margin-top: calc(54px / 2 * -1);
+  margin-bottom: 64px;
+}
+
+@media (max-width: 736px) {
+  .wrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  form {
+    margin-bottom: 32px;
+  }
+}
+
+form input {
+  flex: auto;
+  font-size: 1rem;
+  background-color: var(--gray-500);
+  color: var(--gray-300);
+  border-radius: 8px;
+  border: solid 1px var(--gray-700);
+
+  padding: 1rem;
+}
+
+form input:focus {
+  border-color: var(--purple-dark);
+  color: var(--gray-100);
+}
+
+form input:focus::placeholder {
+  color: var(--gray-100);
+}
+
+form button {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  border-radius: 8px;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  transition: backgroud-color 1s;
+
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background-color: var(--blue);
+}
+
+.todosHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.todosHeader > div {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--blue);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.todosHeader > div:last-of-type {
+  color: var(--purple);
+}
+
+.todosHeader > div > span {
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoEmpty {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--gray-300);
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 64px 24px;
+
+  border-top: solid 1px var(--gray-400);
+}

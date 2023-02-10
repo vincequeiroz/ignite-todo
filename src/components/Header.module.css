@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-700);
+
+  padding-bottom: 8px;
+  height: calc(200px - 8px);
+}
+
+.header .wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: normal;
+  font-weight: bold;
+  color: var(--purple-dark);
+}
+
+.header h1 span:first-of-type {
+  color: var(--blue);
+}
+
+@media (max-width: 736px) {
+  .header {
+    padding-bottom: 18px;
+    height: calc(150px - 18px);
+  }
+}
