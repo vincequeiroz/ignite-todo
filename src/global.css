@@ -49,7 +49,7 @@ body {
 }
 
 @media (max-width: 736px) {
-  * {
+  *:not(strong) {
     font-size: 87.5%;
   }
 }
