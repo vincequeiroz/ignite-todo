@@ -16,6 +16,12 @@
   --danger: #e25858;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +50,6 @@ body {
   line-height: 140%;
 
   min-width: 380px;
-  scroll-behavior: smooth;
   scrollbar-width: thin;
 }
 
