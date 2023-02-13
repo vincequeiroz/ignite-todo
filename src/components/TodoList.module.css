@@ -79,10 +79,6 @@ form button:focus {
   font-size: 0.875rem;
   font-weight: bold;
   color: var(--blue);
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .todosHeader > div:last-of-type {
@@ -92,15 +88,12 @@ form button:focus {
 .todosHeader > div > span {
   background-color: var(--gray-400);
   color: var(--gray-200);
+  margin-left: 8px;
   padding: 2px 8px;
   border-radius: 999px;
 
   font-size: 0.75rem;
   line-height: normal;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .todoEmpty {
